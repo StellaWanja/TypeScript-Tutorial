@@ -1,4 +1,5 @@
 //DATA TYPES
+// type annotations allow us to assign types to variables. eg let scor:number;
 //1. String
 let lName : string;
 lName = "Getrude";
@@ -30,6 +31,10 @@ let c: Color = Color.Blue; //let c=2 - blue
 
 //6. Tuple
 //Useful if you have a function that returns multiple values
+let mine: [number, string];
+mine = [121, 'bacon']; 
+mine[0] = 1;
+//
 let swapNums : [firstNum : number, secondNum : number];
 
 function swapNumbers(num1: number, num2: number) : [number, number]{
@@ -40,6 +45,8 @@ swapNums = swapNumbers(10,20);
 
 //7. Any
 // Avoid any 
+//use when it isn't possible to create a TypeScript type to represent an item
+//eg where we are dealing with dynamic data - data that is defined by end-users rather than developers
 let dep : any;
 dep = "one";
 dep = 10;
