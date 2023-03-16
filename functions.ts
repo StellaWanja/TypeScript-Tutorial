@@ -1,3 +1,4 @@
+// strongly-type all the parameters in the function implementation - to avoid any type inference
 //num3 is optional
 function addNum(num1: number, num2 : number, num3? : number) : number{
     return num3 ? num1 + num2 + num3 : num1 + num2;
